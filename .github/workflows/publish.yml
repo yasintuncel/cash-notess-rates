@@ -2,7 +2,7 @@ name: Publish rates
 
 on:
   schedule:
-    # ECB ~14:00 UTC, TCMB ~12:30 UTC yayımlar; ikisinden sonra, iş günleri.
+    # Weekdays after ECB (~14:00 UTC) and TCMB (~12:30 UTC) publish.
     - cron: "15 15 * * 1-5"
   workflow_dispatch:
 
